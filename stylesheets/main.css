@@ -15,6 +15,11 @@
 }
 */
 
+@font-face {
+    font-family: 'oldschool';
+    src: url(../fonts/symonMedium.ttf);
+}
+
 /* too cewl...
 body,h1,h2,h3,a:hover,#fglayer {
   cursor: url(/images/lightpen_cursor.png) 7 7, auto;
@@ -42,13 +47,21 @@ body,h1,h2,h3,a:hover,#fglayer {
 
 div.statusbar {
   z-index: 2;
+  background-image: url(../scanlines.png);
+  background-repeat: repeat;
 }
 
 body, h1, h2, .searchinput {
+  background-image: url(../scanlines.png);
+  background-repeat: repeat;
   font-weight: normal;
-  font-size: 100%;
-  font-family: /*'Terminus',*/ 'Lucida Console', 'Monospace', monospace;
+  font-size: 16px; /*100%;*/
+  font-family: 'oldschool', 'Lucida Console', 'Monospace', monospace;
   text-shadow: 2px 0px 2px #008800;
+}
+
+h1 {
+  background-color: #000000;
 }
 
 body,h1,h2 {
