@@ -49,7 +49,9 @@
         var lng = navigator.language || navigator.browserLanguage;
         var hsh = location.hash.substr(1);
     
-        if(hsh != "" && hsh != "ru") {
+        if(hsh == "ru") {
+          lng = "ru";
+        } else if(hsh != "" && hsh != "ru") {
           lng = "en";
         }
     
