@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25661962-2"></script>
-    <script>
+    <script async type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-25661962-2"></script>
+    <script type="text/javascript" >
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -30,38 +30,38 @@
     <meta name="description" content="Персональная страница Дмитрия Вадимовича Луцива"/>
     <title>Дмитрий Вадимович Луцив</title>
 
-    <style id="i18n">
-    .en {display: none;}
-    .ru {}
+    <style type="text/css" id="i18n" >
+      .en {display: none;}
+      .ru {}
     </style>
 
+    <script type="text/javascript" >
+      function setLang(lang) {
+        var s = document.getElementById("i18n");
+        if(lang == "en") {
+          s.innerText = ".ru {display: none;} .en {}";
+        } else if(lang == "ru") {
+          s.innerText = ".en {display: none;} .ru {}";
+        }
+      }
+    
+      function autoLang() {
+        var lng = navigator.language || navigator.browserLanguage;
+        var hsh = location.hash.substr(1);
+    
+        if(hsh != "" && hsh != "ru") {
+          lng = "en";
+        }
+    
+        if(!lng.startsWith("ru-")) {
+          setLang("en");
+        }
+      }
+    
+      autoLang();
+    </script>
+
   </head>
-
-  <script type="text/javascript">
-    function setLang(lang) {
-      var s = document.getElementById("i18n");
-      if(lang == "en") {
-        s.innerText = ".ru {display: none;} .en {}";
-      } else if(lang == "ru") {
-        s.innerText = ".en {display: none;} .ru {}";
-      }
-    }
-
-    function autoLang() {
-      var lng = navigator.language || navigator.browserLanguage;
-      var hsh = location.hash.substr(1);
-  
-      if(hsh != "" && hsh != "ru") {
-        lng = "en";
-      }
-  
-      if(!lng.startsWith("ru-")) {
-        setLang("en");
-      }
-    }
-
-    autoLang();
-  </script>
   <body>
 
 <div id="fglayer" class="vcard">
