@@ -94,6 +94,7 @@ li {
   list-style: none;
   margin-left: 0em;
   padding-left: 0em;
+  /* white-space: pre; */
   /*border: solid 1px yellow;*/ /* debug */
 }
 
