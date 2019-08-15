@@ -31,8 +31,8 @@
     <title>Дмитрий Вадимович Луцив</title>
 
     <style type="text/css" id="i18n" >
-      .en {display: none;}
-      .ru {}
+      .en {}
+      .ru {display: none;}
     </style>
 
     <script type="text/javascript" >
@@ -49,14 +49,12 @@
         var lng = navigator.language || navigator.browserLanguage;
         var hsh = location.hash.substr(1);
     
-        if(hsh == "ru") {
-          lng = "ru";
-        } else if(hsh != "" && hsh != "ru") {
-          lng = "en";
+        if(hsh == "ru" || hsh == "en") {
+          lng = hsh;
         }
     
-        if(!lng.startsWith("ru")) {
-          setLang("en");
+        if(lng.startsWith("ru")) {
+          setLang("ru");
         }
       }
     
@@ -78,8 +76,8 @@
 </h1>
 
 <ul class="xoxo">
-<li class="ru"><a href="#en" onclick="setLang('en');">На английский...</a></li>
-<li class="en"><a href="#ru" onclick="setLang('ru');">To Russian...</a></li>
+<li class="ru"><a href="#en" onclick="setLang('en');">To English...</a></li>
+<li class="en"><a href="#ru" onclick="setLang('ru');">На русский...</a></li>
 </ul>
 
 
