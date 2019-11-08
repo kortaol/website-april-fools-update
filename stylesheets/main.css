@@ -1,20 +1,3 @@
-/*
-@font-face {
-    font-family: 'ProFontWindows';
-    src: url(/fonts/ProFontWindows.ttf);
-}
-
-@font-face {
-    font-family: 'TerminusBold';
-    src: url(/fonts/TerminusBold.ttf);
-}
-
-@font-face {
-    font-family: 'Terminus';
-    src: url(/fonts/Terminus.ttf);
-}
-*/
-
 @font-face {
     font-family: 'oldschool';
     src: url(../fonts/3270SemiNarrow.woff);
@@ -51,7 +34,7 @@ div.statusbar {
 
 body, h1, h2, .searchinput {
   font-weight: normal;
-  font-size: 16px; /*100%;*/
+  font-size: 18px; /*100%;*/
   font-family: 'oldschool', 'Lucida Console', 'Monospace', monospace;
   text-shadow: 2px 0px 2px #008800;
 }
