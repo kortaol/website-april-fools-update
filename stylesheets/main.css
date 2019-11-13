@@ -34,20 +34,32 @@ div.statusbar {
 
 body, h1, h2, .searchinput {
   font-weight: normal;
-  font-size: 18px; /*100%;*/
   font-family: 'oldschool', 'Lucida Console', 'Monospace', monospace;
   text-shadow: 2px 0px 2px #008800;
 }
 
-/* BG */ div.statusbar, body, h1, h2, .searchinput {
-  background-image: url(../scanlines.png);
-  background-repeat: repeat;
+@media (max-resolution: 100dpi) {
+  /* BG */ div.statusbar, body, h1, h2, .searchinput {
+    background-image: url(../scanlines.png);
+    background-repeat: repeat;
+  }
 
-  background-image: -moz-image-set(url(../scanlines.png) 1x, url(../scanlines2x.png) 2x);
-  background-image: -o-image-set(url(../scanlines.png) 1x, url(../scanlines2x.png) 2x);
-  background-image: -ms-image-set(url(../scanlines.png) 1x, url(../scanlines2x.png) 2x);
-  background-image: image-set(url(../scanlines.png) 1x, url(../scanlines2x.png) 2x);
+  body, h1, h2, .searchinput {
+    font-size: 18px; /*100%;*/
+  }
 }
+
+@media (min-resolution: 101dpi) {
+  /* BG */ div.statusbar, body, h1, h2, .searchinput {
+    background-image: url(../scanlines2x.png);
+    background-repeat: repeat;
+  }
+
+  body, h1, h2, .searchinput {
+    font-size: 24px; /*100%;*/
+  }
+}
+
 
 h1 {
   background-color: #000000;
