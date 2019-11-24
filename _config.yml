@@ -1,4 +1,2 @@
-exclude:
-  - ".well-known"
 keep_files:
   - ".well-known"
