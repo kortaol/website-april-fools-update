@@ -40,9 +40,9 @@
       function setLang(lang) {
         var s = document.getElementById("i18n");
         if(lang == "en") {
-          s.innerText = ".ru {display: none;} .en {}";
+          s.innerText = ".ru {display: none;} .en {} .ph {display: none;}";
         } else if(lang == "ru") {
-          s.innerText = ".en {display: none;} .ru {}";
+          s.innerText = ".en {display: none;} .ru {} .ph {display: none;}";
         }
       }
     
@@ -58,7 +58,7 @@
           setLang("ru");
         }
       }
-    
+
       autoLang();
     </script>
 
