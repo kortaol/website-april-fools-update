@@ -4,9 +4,9 @@
 }
 
 :root {
-    --phosphor-bright: #ffd633;
-    --phosphor:        #bb9700;
-    --phosphor-dark:   #4d3d00;
+    --phosphor-bright: hsl(50, 100%, 65%);
+    --phosphor:        hsl(50, 100%, 45%);
+    --phosphor-dark:   hsl(50, 100%, 18%);
 }
 
 
@@ -148,7 +148,6 @@ body {
 
 h1 {
   text-align: center;
-  text-decoration: underline;
 }
 
 h2 {
