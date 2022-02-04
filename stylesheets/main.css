@@ -42,7 +42,9 @@ div.statusbar {
 body, h1, h2, .searchinput {
   font-weight: normal;
   font-family: 'oldschool', 'Lucida Console', 'Monospace', monospace;
-  text-shadow: 1px 0px 0.75px var(--phosphor-bright);
+  text-shadow:
+    +0.75px 0px 0.75px var(--phosphor),
+    -0.75px 0px 0.75px var(--phosphor);
 }
 
 @media (max-resolution: 100dpi) {
@@ -94,8 +96,6 @@ h2 {
 
 h2:before {
   content: " "; /* 1 x &nbsp; */
-  color: var(--phosphor-dark);
-  text-shadow: none;
   white-space: pre;
 }
 
@@ -169,18 +169,20 @@ a:visited {
 a:hover {
   color: var(--phosphor-bright);
   background-color: var(--phosphor-dark);
-  text-shadow: 1px 0px 2px var(--phosphor-bright);
+  text-shadow:
+    +1px 0px 1px var(--phosphor-bright),
+    -1px 0px 1px var(--phosphor-bright);
 }
 
 
 a:after {
   content: "\005D";
-  color: var(--phosphor);
+  color: var(--phosphor-bright);
 }
 
 a:before {
   content: "\005B";
-  color: var(--phosphor);
+  color: var(--phosphor-bright);
 }
 
 .statusbar {
