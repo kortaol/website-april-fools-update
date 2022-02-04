@@ -1,7 +1,14 @@
 @font-face {
     font-family: 'oldschool';
-    src: url(../fonts/3270SemiNarrow.woff);
+    src: url(../fonts/Glass_TTY_VT220.ttf);
 }
+
+:root {
+    --phosphor-bright: #ffd633;
+    --phosphor:        #bb9700;
+    --phosphor-dark:   #4d3d00;
+}
+
 
 /* too cewl...
 body,h1,h2,h3,a:hover,#fglayer {
@@ -35,12 +42,13 @@ div.statusbar {
 body, h1, h2, .searchinput {
   font-weight: normal;
   font-family: 'oldschool', 'Lucida Console', 'Monospace', monospace;
-  text-shadow: 2px 0px 2px #008800;
+  text-shadow: 1px 0px 0.75px var(--phosphor-bright);
 }
 
 @media (max-resolution: 100dpi) {
-  /* BG */ div.statusbar, body, h1, h2, .searchinput {
-    background-image: url(../scanlines.png);
+  /* BG */ div.statusbar, h2, a:hover, .searchinput {
+    background-image: url(../scanlines20.png);
+    background-size: contain;
     background-repeat: repeat;
   }
 
@@ -51,8 +59,9 @@ body, h1, h2, .searchinput {
 }
 
 @media (min-resolution: 101dpi) {
-  /* BG */ div.statusbar, body, h1, h2, .searchinput {
-    background-image: url(../scanlines2x.png);
+  /* BG */ div.statusbar, h2, a:hover, .searchinput {
+    background-image: url(../scanlines20.png);
+    background-size: contain;
     background-repeat: repeat;
   }
 
@@ -84,7 +93,10 @@ h2 {
 }
 
 h2:before {
-  content: "\00A0"; /* 1 x &nbsp; */
+  content: " "; /* 1 x &nbsp; */
+  color: var(--phosphor-dark);
+  text-shadow: none;
+  white-space: pre;
 }
 
 
@@ -102,13 +114,14 @@ li {
 }
 
 li:before {
-  content: "\00A0o\00A0"; /* latin "o " */
-  color: #009900;
+  content: " o "; /* latin "o " */
+  color: var(--phosphor);
+  white-space: pre;
 }
 
 li.nobull:before {
-  content: "\00A0\00A0\00A0"; /* 3 x &nbsp; */
-  color: #009900;
+  content: "   "; /* 3 x &nbsp; */
+  white-space: pre;
 }
 
 li.nobull {
@@ -125,12 +138,11 @@ ul {
   /* border: solid 1px green; */ /* debug */
 }
 
-
 /* colors etc */
 
 body {
   background-color: #000000;
-  color: #009900;
+  color: var(--phosphor);
   height: 100%; 
 }
 
@@ -140,47 +152,47 @@ h1 {
 }
 
 h2 {
-  background-color: #005500;
-  color: #22ff22;
+  background-color: var(--phosphor-dark);
+  color: var(--phosphor-bright);
   width: 100%;
 }
 
 a {
-  color: #00FF00;
+  color: var(--phosphor-bright);
   text-decoration: none;
 }
 
 a:visited {
-  color: #00DD00;
+  color: var(--phosphor-bright);
 }
 
 a:hover {
-  color: #44FF44;
-  background-color: #003300;
-  text-shadow: 2px 0px 2px #00AA00;
+  color: var(--phosphor-bright);
+  background-color: var(--phosphor-dark);
+  text-shadow: 1px 0px 2px var(--phosphor-bright);
 }
 
 
 a:after {
   content: "\005D";
-  color: #009900;
+  color: var(--phosphor);
 }
 
 a:before {
   content: "\005B";
-  color: #009900;
+  color: var(--phosphor);
 }
 
 .statusbar {
  position: absolute;
  bottom: 0;
  left: 0;
- background-color: #003300;
+ background-color: var(--phosphor-dark);
  width: 100%;
 }
 
 .cursor {
-  color: #00FF00;
+  color: var(--phosphor-bright);
   text-decoration: blink;
 }
 
@@ -190,8 +202,8 @@ a:before {
 }
 
 .searchinput {
-  background-color: #002000;
-  color: #22ff22;
+  background-color: var(--phosphor-dark);
+  color: var(--phosphor);
   border-style: hidden;
   padding: 0px;
   width: 24em;
