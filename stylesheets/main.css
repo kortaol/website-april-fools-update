@@ -45,7 +45,7 @@ body, h1, h2, .searchinput {
   font-family: 'oldschool', 'Lucida Console', 'Monospace', monospace;
   text-shadow:
     +0.75px 0px 0.75px var(--phosphor),
-    -0.75px 0px 0.75px var(--phosphor);
+    -0.75px 0px 0.75px var(--phosphor-black);
 }
 
 @media (max-resolution: 100dpi) {
@@ -171,7 +171,7 @@ a:hover {
   background-color: var(--phosphor-dark);
   text-shadow:
     +1px 0px 1px var(--phosphor-bright),
-    -1px 0px 1px var(--phosphor-bright);
+    -1px 0px 1px var(--phosphor-dark);
 }
 
 
