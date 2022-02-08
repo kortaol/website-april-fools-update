@@ -46,15 +46,15 @@
           s.innerText = ".en {display: none;} .ru {} .ph {display: none;}";
         }
       }
-    
+
       function autoLang() {
         var lng = navigator.language || navigator.browserLanguage;
         var hsh = location.hash.substr(1);
-    
+
         if(hsh == "ru" || hsh == "en") {
           lng = hsh;
         }
-    
+
         if(lng.startsWith("ru")) {
           setLang("ru");
         }
@@ -121,7 +121,9 @@
 
 <ul class="xoxo">
 <li><a rel="external" href="https://duckduckgo.com/?q=%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9+%D0%9B%D1%83%D1%86%D0%B8%D0%B2+%D1%84%D0%BE%D1%80%D1%82%D0%B5%D0%BF%D0%B8%D0%B0%D0%BD%D0%BE"><span class="ru">Мой тёзка - пианист</span><span class="ph"> </span><span class="en">My namesake, a pianist</span></a></li>
+<li><a rel="external" href="https://github.com/dluciv/static-dluciv.name/blob/gh-pages/fonts/README.md"><span class="ru">Что это за шрифт?..</span><span class="ph"> </span><span class="en">What a font is this?..</span></a></li>
 </ul>
+
 
 <span style="display:none;"><img class="photo" src="https://edu.dluciv.name/_/rsrc/1302634433822/config/dluciv-edu-2011-120x120.jpg" alt="Фотография Дмитрия Вадимовича Луцива" /></span>
 </div> <!-- /vcard -->
