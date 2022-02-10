@@ -44,8 +44,8 @@ body, h1, h2, .searchinput {
   font-weight: normal;
   font-family: 'oldschool', 'Lucida Console', 'Monospace', monospace;
   text-shadow:
-    +0.75px 0px 0.75px var(--phosphor),
-    -0.5px  0px 0.75px var(--phosphor);
+    +0.025em 0px 0.025em var(--phosphor),
+    -0.015em  0px 0.015em var(--phosphor);
 }
 
 /* BG */ div.statusbar, h2, a:hover, .searchinput {
@@ -162,8 +162,8 @@ a:hover {
   color: var(--phosphor-bright);
   background-color: var(--phosphor-dark);
   text-shadow:
-    +1px   0px 1px var(--phosphor-bright),
-    -0.5px 0px 1px var(--phosphor-bright);
+    +0.04em  0px 0.04em var(--phosphor-bright),
+    -0.02em 0px 0.02em var(--phosphor-bright);
 }
 
 
