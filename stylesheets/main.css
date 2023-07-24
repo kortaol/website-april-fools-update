@@ -4,10 +4,12 @@
 }
 
 :root {
-    --phosphor-bright: hsl(45, 100%, 60%);
-    --phosphor:        hsl(45, 100%, 40%);
-    --phosphor-dark:   hsl(45, 100%, 18%);
-    --phosphor-black:  hsl(45, 100%, 7%);
+    --phosphor-hue:    45deg;
+
+    --phosphor-bright: hsl(var(--phosphor-hue), 100%, 60%);
+    --phosphor:        hsl(var(--phosphor-hue), 100%, 40%);
+    --phosphor-dark:   hsl(var(--phosphor-hue), 100%, 18%);
+    --phosphor-black:  hsl(var(--phosphor-hue), 100%, 7%);
 }
 
 
