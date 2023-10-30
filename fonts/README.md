@@ -10,4 +10,4 @@ The afterglow of the phosphor was inspired by [Norbert Landsteiner's post](https
 
 * 😈
   А ещё этот шрифт — действительно гроза [хинтинга](https://ru.wikipedia.org/wiki/%D0%A5%D0%B8%D0%BD%D1%82%D0%B8%D0%BD%D0%B3).
-  Also this font is really a kind of [hinting](https://en.wikipedia.org/wiki/Font_hinting) thunderstorm.
+  Also this font is really a kind of [hinting](https://en.wikipedia.org/wiki/Font_hinting) killer.
